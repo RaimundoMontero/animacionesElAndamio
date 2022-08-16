@@ -1,0 +1,238 @@
+
+body
+{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.isotipo
+{
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.circle
+{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.circle span 
+{
+    width: 120px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    /* transition: all 0.4s; */
+}
+
+/*cuarto peldaño*/
+.circle span:nth-child(2)
+{
+    width: 88px;
+    height: 19px;
+    top: 243px;
+    left: 220px;
+    background-color: #fb9300;
+}
+
+/*segundo peldaño*/
+.circle span:nth-child(3)
+{
+    width: 80px;
+    height: 19px;
+    top: 185px;
+    left: 120px;
+    background-color: #fb9300;
+}
+
+/*tercer peldaño*/
+.circle span:nth-child(4)
+{
+    width: 80px;
+    height: 19px;
+    top: 243px;
+    left: 100px;
+    background-color: #fb9300;
+    
+}
+
+/*primer peldaño*/
+.circle span:nth-child(5)
+{
+    width: 80px;
+    height: 18px;
+    top: 130px;
+    left: 140px;
+    background-color: #fb9300;
+}
+
+/*largo diagonal n°4*/
+.circle span:nth-child(6)
+{
+    width: 250px;
+    height: 18px;
+    top: 190px;
+    left: 159px;
+    rotate: 71deg;
+    background-color: #fb9300;
+}
+
+/*largo diagonal n°3*/
+.circle span:nth-child(7)
+{
+    width: 250px;
+    height: 18px;
+    top: 190px;
+    rotate: 71deg;
+    background-color: #fb9300;
+}
+
+/*largo diagonal n°2*/
+.circle span:nth-child(8)
+{
+    width: 250px;
+    height: 18px;
+    rotate: 109deg;
+    top: 190px;
+    background-color: #fb9300;
+}
+
+/*horizontal de arriba*/
+.circle span:nth-child(9)
+{
+    width: 172px;
+    height: 18px;
+    top: 70px;
+    left: 120px;
+    background-color: #fb9300;
+}
+
+/*largo diagonal n°1*/
+.circle span:nth-child(10)
+{
+    width: 250px;
+    height: 18px;
+    top: 190px;
+    background-color: #fb9300;
+    left: -10px;
+    rotate: 109deg;
+}
+
+/*cono derecha*/
+.circle span:nth-child(11)
+{
+    width: 20px;
+    height: 20px;
+    background-color: #fb9300;
+    top: 78px;
+    left: 250px;
+    rotate: 45deg;
+}
+
+.circle span:nth-child(12)
+{
+    width: 20px;
+    height: 20px;
+    background-color: #fb9300;
+    top: 75px;
+    left: 132px;
+    rotate: 45deg;
+}
+
+.circle span:nth-child(13)
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 88px;
+    left: 120px;
+}
+
+.circle span:nth-child(14)
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 88px;
+    left: 260.5px;
+}
+
+.circle:hover span:nth-child(2)
+{
+    transition: all 1.5s;
+    transform: rotate(25deg);
+    rotate: 155deg;
+}
+
+.circle:hover span:nth-child(3)
+{
+    transition: all 1s;
+    transform: rotate(25deg);
+    rotate: 155deg;
+}
+
+.circle:hover span:nth-child(4)
+{
+    transition: all 1s;
+    transform: rotate(25deg);
+    rotate: 155deg;
+}
+
+.circle:hover span:nth-child(5)
+{
+    transition: all 1s;
+    transform: rotate(25deg);
+    rotate: 155deg;
+}
+
+/* .circle:hover span:nth-child(6)
+{
+    transition: all 1s;
+    transform: rotate(25deg);
+    rotate: 155deg;
+}
+
+.circle:hover span:nth-child(7)
+{
+    transition: all 1s;
+    transform: rotate(25deg);
+    rotate: 155deg;
+}  */
+
+
+
+
+
+.circle::before
+{
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border: 6px solid #131313; 
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%; 
+  z-index: -1px;
+  animation: spin 3s linear infinite;
+}
+
+
+@keyframes spin 
+{
+  to{transform: rotate(360deg);}
+}
