@@ -88,6 +88,7 @@ body
     left: 159px;
     rotate: 71deg;
     background-color: #fb9300;
+    
 }
 
 /*largo diagonal n°3*/
@@ -129,6 +130,8 @@ body
     background-color: #fb9300;
     left: -10px;
     rotate: 109deg;
+    animation: spin 3s linear infinite;
+    z-index: -1px;
 }
 
 /*cono derecha*/
